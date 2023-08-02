@@ -1,7 +1,34 @@
-h1 {
-  color: green;
+:root {
+  --paragraph-font: "Comfortaa", cursive;
+  --heading-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  text-align: center;
+}
 p {
-  font-family: "Comfortaa", cursive;
+  font-family: var(--paragraph-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+.hero {
+  font-size: 50px;
+  margin: 0 auto;
+  font-family: var(--heading-font);
+  font-weight: 500;
+}
+.introduction {
+  font-size: 20px;
+}
+
+.home-image {
+  max-width: 200px;
 }
