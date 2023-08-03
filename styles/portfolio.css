@@ -21,7 +21,7 @@ h6 {
 
 .hero {
   font-size: 50px;
-  margin: 0 auto;
+  margin: 160px 20px auto;
   font-family: var(--heading-font);
   font-weight: 500;
 }
