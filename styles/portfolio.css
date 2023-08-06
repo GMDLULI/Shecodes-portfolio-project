@@ -19,16 +19,44 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.hero {
-  font-size: 50px;
-  margin: 160px 20px auto;
-  font-family: var(--heading-font);
-  font-weight: 500;
+.hero-paragraph {
+  margin-top: 160px;
+  font-size: 40px;
+  font-weight: 800;
 }
 .introduction {
   font-size: 20px;
+  font-family: var(--paragraph-font);
 }
 
 .home-image {
   max-width: 200px;
+}
+.image {
+  margin: 60px 0;
+  background-color: whitesmoke;
+  max-width: 45%;
+  border: solid 10px whitesmoke;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-primary {
+  border-color: burlywood;
+  background-color: burlywood !important;
+}
+
+@media (max-width: 900px) {
+  .hero-paragraph {
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .introduction {
+    font-family: 10px;
+  }
+  .image {
+    display: none;
+    text-align: center;
+  }
 }
