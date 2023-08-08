@@ -64,6 +64,25 @@ h6 {
 .work-link:hover {
   text-decoration: none;
 }
+.socials {
+  margin: 50px;
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 10px;
+  position: relative;
+  line-height: 2;
+  text-align: left;
+  left: 300px;
+}
+.contact-head {
+  margin-bottom: 80px;
+}
 @media (max-width: 900px) {
   .hero-paragraph {
     margin-top: 60px;
