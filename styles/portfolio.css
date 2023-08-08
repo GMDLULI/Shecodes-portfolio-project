@@ -47,6 +47,11 @@ h6 {
   border-color: burlywood;
   background-color: burlywood !important;
 }
+.work-image {
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 50%;
+}
 
 @media (max-width: 900px) {
   .hero-paragraph {
