@@ -1,10 +1,13 @@
 :root {
   --paragraph-font: "Comfortaa", cursive;
   --heading-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary-color: burlywood;
+  --border-color: whitesmoke;
 }
 
 body {
   text-align: center;
+  margin: 0 auto;
 }
 p {
   font-family: var(--paragraph-font);
@@ -18,7 +21,25 @@ h5,
 h6 {
   font-family: var(--heading-font);
 }
+ul {
+  list-style-type: none;
+}
 
+li {
+  margin-top: 10px;
+  position: relative;
+  line-height: 2;
+  text-align: left;
+  left: 300px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
 .hero-paragraph,
 .work-heading {
   margin-top: 160px;
@@ -37,16 +58,16 @@ h6 {
 }
 .image {
   margin: 60px 0;
-  background-color: whitesmoke;
+  background-color: var(--border-color);
   max-width: 45%;
-  border: solid 10px whitesmoke;
+  border: solid 10px var(--border-color);
   border-radius: 8px;
   padding: 10px;
 }
 
 .btn-primary {
-  border-color: burlywood;
-  background-color: burlywood !important;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 .work-image {
   max-width: 300px;
@@ -61,27 +82,19 @@ h6 {
   opacity: 20%;
   font-size: 30px;
 }
-.work-link:hover {
-  text-decoration: none;
-}
+
 .socials {
-  margin: 50px;
-  color: black;
+  margin: 40px;
+  color: #a55233;
   text-decoration: none;
-}
-ul {
-  list-style-type: none;
+  font-size: 30px;
 }
 
-li {
-  margin-top: 10px;
-  position: relative;
-  line-height: 2;
-  text-align: left;
-  left: 300px;
-}
 .contact-head {
   margin-bottom: 80px;
+}
+.contact-details {
+  background-color: #a55233;
 }
 @media (max-width: 900px) {
   .hero-paragraph {
@@ -98,7 +111,8 @@ li {
     font-size: 12px;
   }
   .image,
-  .work-paragraphs {
+  .work-paragraphs,
+  .contact-description {
     display: none;
   }
   .project-heading {
@@ -114,5 +128,19 @@ li {
   }
   .about-image {
     max-width: 200px;
+  }
+  .socials {
+    margin: 10px;
+    position: relative;
+    right: 80px;
+  }
+  .social-link {
+    position: relative;
+    right: 350px;
+  }
+  .contact-paragraph,
+  .socials,
+  .contact-head {
+    text-align: left;
   }
 }
