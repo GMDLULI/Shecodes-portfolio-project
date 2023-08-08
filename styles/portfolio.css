@@ -76,4 +76,7 @@ h6 {
     margin-bottom: 0;
     padding: 0 70px;
   }
+  .about-image {
+    max-width: 200px;
+  }
 }
