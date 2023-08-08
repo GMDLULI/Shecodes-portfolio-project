@@ -50,13 +50,28 @@ h6 {
   .hero-paragraph {
     margin-top: 60px;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 900;
+  }
+  .hero-heading {
+    font-size: 20px;
+    font-weight: 600;
   }
   .introduction {
-    font-family: 10px;
+    font-size: 12px;
   }
   .image {
     display: none;
     text-align: center;
+  }
+  .project-heading {
+    font-size: 30px;
+    margin-top: 0%;
+  }
+  .app-description {
+    font-size: 15px;
+    text-align: center;
+    margin: 18px, 0;
+    margin-bottom: 0;
+    padding: 0 70px;
   }
 }
