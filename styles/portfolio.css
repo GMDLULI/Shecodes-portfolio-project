@@ -41,8 +41,9 @@ a:hover {
   text-decoration: none;
 }
 .hero-paragraph,
-.work-heading {
-  margin-top: 160px;
+.work-heading,
+.contact-paragraph {
+  margin-top: 60px;
   font-size: 40px;
   font-weight: 800;
 }
@@ -52,7 +53,7 @@ a:hover {
 }
 
 .about-image {
-  margin-top: 160px;
+  margin-top: 60px;
   max-width: 400px;
   border-radius: 100%;
 }
@@ -63,6 +64,9 @@ a:hover {
   border: solid 10px var(--border-color);
   border-radius: 8px;
   padding: 10px;
+}
+.active {
+  color: var(--primary-color) !important;
 }
 
 .btn-primary {
