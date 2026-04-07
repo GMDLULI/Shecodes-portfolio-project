@@ -8,12 +8,6 @@
       content="Gugulethu is a front-end developer beginner based in South Africa"
     />
     <title>About- About Gugulethu Mdluli</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,140 +21,71 @@
     <link rel="stylesheet" href="/styles/portfolio.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" title="linkden link"
-          >Gugulethu Mdluli</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/" title="Home"
-              >Home</a
-            >
-            <a class="nav-link" href="/contact.html" title="Contact"
-              >Contact me</a
-            >
-            <a class="nav-link active" href="/about.html" title="About"
-              >About me</a
-            >
-            <a class="nav-link" href="/my-work.html" title="my work">My Work</a>
-          </div>
-        </div>
+    <!-- ======= NAV (same as index) ======= -->
+<nav>
+  <a class="nav-brand" href="index.html">Gugulethu <span>Mdluli</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="my-work.html">My Work</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="about.html">About</a>
       </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 mt-5">
-          <img
-            src="/styles/images/gugulethu-1.jpg"
-            class="border about-image"
-            alt="image of Gugulethu"
-          />
-        </div>
-        <div class="col-sm-6 mt-5">
-          <p class="hero-paragraph">Hi I am</p>
-          <h1 class="hero-heading">Gugulethu Mdluli</h1>
-          <h2 class="introduction mb-5">
-            Front end developer based in South Africa
-          </h2>
-          <p>
-            I am a front end developer based in South Africa this is a my
-            profile page showing all the work I've done so far in the SheCodes
-            workshop. I highly recommend all women who are interested in tech to
-            enroll in this workshop as it as provided skills I needed to tackle
-            the tech industry.
-          </p>
-          <a href="/my-work.html" class="btn btn-primary mt-8 mb-5"
-            >My Projects</a
-          >
+
+    <!-- ======= ABOUT SECTION ======= -->
+    <section class="contact-hero">
+      <div class="container">
+        <p class="section-label">About Me</p>
+        <h1 class="section-title">Gugulethu Mdluli</h1>
+
+        <div class="contact-grid">
+          <!-- IMAGE -->
+          <div>
+            <img src="/styles/images/profile-picture.jpeg" 
+                alt="Gugulethu"
+                style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+          </div>
+
+          <!-- TEXT -->
+          <div>
+            <p style="margin-bottom:1.5rem;">
+              I am a front-end developer based in South Africa, passionate about building
+              responsive and user-friendly applications using modern technologies like React.js
+              and TypeScript.
+            </p>
+
+            <p style="margin-bottom:1.5rem;">
+              I have hands-on experience working in agile teams, developing real-world
+              applications, and translating UI/UX designs into clean, maintainable code.
+            </p>
+
+            <p style="margin-bottom:2rem;">
+              My goal is to grow into a world-class engineer while contributing to impactful,
+              scalable products.
+            </p>
+
+            <a href="my-work.html" class="btn btn-primary">View My Work</a>
+          </div>
         </div>
       </div>
-      <footer>
-        <div
-          class="contact-box justify-content-between mb-5 mt-5 d-none d-md-flex"
-        >
-          <div>
-            <h4>Work Enquiry</h4>
-            <p class="text">Lets work together</p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn btn-primary mt-3"
-              title="contact me"
-              >Contact me</a
-            >
-          </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
-          <a
-            href="mailto:gugulethundluli98@gmail.com"
-            title="email"
-            target="_blank"
-            ><h3>gugulethumdluli98@gmail.com</h3></a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://www.instagram.com/gugulethu.mdluli/#"
-            class="mt-5 socials"
-            title="instagram"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/gugulethu.mdluli.106"
-            class="mt-5 socials"
-            title="facebook"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a
-            href="https://twitter.com/MdluliM80026"
-            class="socials mt-5"
-            title="twitter"
-            target="_blank"
-            ><i class="fa-brands fa-square-x-twitter"></i>
-          </a>
-          <a
-            href="https://github.com/GMDLULI"
-            class="socials mt-5"
-            title="Github"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    </section>
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"
+        ></script>
   </body>
 </html>

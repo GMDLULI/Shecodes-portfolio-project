@@ -3,123 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="contact- Gugulethu Mdluli for any colaborations and job enquires"
-    />
-    <title>Contact- Contact Gugulethu Mdluli</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <meta name="description" content="Contact Gugulethu Mdluli — Front-End Developer open to collaborations, freelance work, and job opportunities." />
+    <title>Contact — Gugulethu Mdluli</title>
+    <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/ced7c3a3be.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ced7c3a3be.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" title="linkden link"
-          >Gugulethu Mdluli</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/" title="Home"
-              >Home</a
-            >
-            <a class="nav-link active" href="/contact.html" title="Contact"
-              >Contact me</a
-            >
-            <a class="nav-link" href="/about.html" title="About">About me</a>
-            <a class="nav-link" href="/my-work.html" title="my work">My Work</a>
+
+    <nav>
+      <a class="nav-brand" href="index.html">Gugulethu <span>Mdluli</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="my-work.html">My Work</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:0.55rem 1.4rem;">Hire Me</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <div class="contact-hero" style="max-width:1100px; margin:0 auto;">
+      <p class="section-label fade-up delay-1">Let's Talk</p>
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4.5rem); font-family: var(--font-display); color: var(--text);" class="fade-up delay-2">
+        Get in <em style="font-style:italic; color:var(--accent);">touch</em>
+      </h1>
+      <p style="max-width:500px; margin-top:1rem; color:var(--text-muted);" class="fade-up delay-3">
+        I'm open to full-time roles, freelance projects, and creative collaborations. Whether you have a job opportunity or just want to say hello — my inbox is open.
+      </p>
+    </div>
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-grid" style="padding: 0 5%; max-width:1100px; margin:0 auto;">
+
+      <div class="contact-info">
+        <h3>Direct Contact</h3>
+
+        <div class="contact-method">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-method-info">
+            <div class="contact-method-label">Email</div>
+            <div class="contact-method-value">
+              <a href="mailto:mdluligugulethu202@gmail.com">mdluligugulethu202@gmail.com</a>
+            </div>
           </div>
         </div>
+
+        <div class="contact-method">
+          <div class="contact-icon">📞</div>
+          <div class="contact-method-info">
+            <div class="contact-method-label">Phone</div>
+            <div class="contact-method-value">076 510 3305</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon">📍</div>
+          <div class="contact-method-info">
+            <div class="contact-method-label">Location</div>
+            <div class="contact-method-value">Johannesburg, South Africa</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="contact-method-info">
+            <div class="contact-method-label">GitHub</div>
+            <div class="contact-method-value">
+              <a href="https://github.com/GMDLULI" target="_blank">github.com/GMDLULI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="contact-method-info">
+            <div class="contact-method-label">LinkedIn</div>
+            <div class="contact-method-value">
+              <a href="https://www.linkedin.com/in/gugulethu-mdluli-242655244" target="_blank">gugulethu-mdluli-242655244</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </nav>
-    <h1 class=".contact-paragraph mt-5">Contact me</h1>
-    <p class="introduction contact-head">
-      front-end developer based in South Africa
-    </p>
-    <div class="mb-5">
-      <a
-        href="https://www.facebook.com/gugulethu.mdluli.106"
-        class="mt-5 socials"
-        title="facebook"
-        ><i class="fa-brands fa-facebook"></i
-      ></a>
-      <a
-        href="https://www.instagram.com/gugulethu.mdluli/#"
-        class="mt-5 socials"
-        title="instagram"
-      >
-        <i class="fa-brands fa-square-instagram"></i
-      ></a>
-      <a href="https://twitter.com/MdluliM80026" class="socials" title="twitter"
-        ><i class="fa-brands fa-square-x-twitter"></i>
-      </a>
-    </div>
-    <div class="container contact-details">
-      <div class="row">
-        <div class="col-sm-4">
-          <p class="mt-5 contact-description">
-            You can contact me on the following socials I am also available on
-            GitHub you can see more of my projects unrelated to SheCodes here on
-            GitHub. I am open to colaboations and any job opportunities.
+
+      <div class="contact-socials-wrap">
+        <h3>Find Me Online</h3>
+        <div class="social-grid">
+
+          <a href="https://github.com/GMDLULI" target="_blank" class="social-card">
+            <div class="social-card-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="social-card-name">GitHub</span>
+              <span class="social-card-handle">GMDLULI</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gugulethu-mdluli-242655244" target="_blank" class="social-card">
+            <div class="social-card-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <span class="social-card-name">LinkedIn</span>
+              <span class="social-card-handle">gugulethu-mdluli</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/gugulethu.mdluli/#" target="_blank" class="social-card">
+            <div class="social-card-icon"><i class="fa-brands fa-square-instagram"></i></div>
+            <div>
+              <span class="social-card-name">Instagram</span>
+              <span class="social-card-handle">gugulethu.mdluli</span>
+            </div>
+          </a>
+
+          <a href="https://twitter.com/MdluliM80026" target="_blank" class="social-card">
+            <div class="social-card-icon"><i class="fa-brands fa-square-x-twitter"></i></div>
+            <div>
+              <span class="social-card-name">X / Twitter</span>
+              <span class="social-card-handle">MdluliM80026</span>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/gugulethu.mdluli.106" target="_blank" class="social-card">
+            <div class="social-card-icon"><i class="fa-brands fa-facebook"></i></div>
+            <div>
+              <span class="social-card-name">Facebook</span>
+              <span class="social-card-handle">gugulethu.mdluli</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- availability note -->
+        <div style="margin-top:2.5rem; padding:1.5rem; background:var(--accent-dim); border:1px solid rgba(201,169,110,0.25); border-radius:8px;">
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">
+            <span style="color:var(--accent); font-weight:600;">Currently available</span> — open to full-time front-end roles, contract work, and exciting collaborations in South Africa or remotely.
           </p>
         </div>
-        <div class="col-sm-8">
-          <ul class="mt-5 social-link">
-            <li>
-              <a href="mailto:gugulethumdluli98@gmail.com"
-                >gugulethumdluli98@gmail.com</a
-              >
-            </li>
-            <li>+27765103305</li>
-            <li>
-              <a href="https://github.com/GMDLULI">GMDLULI@gitHub.com</a>
-            </li>
-          </ul>
+      </div>
+
+    </div>
+
+    <div style="margin-top:5rem;" class="divider"></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Gugulethu <span>Mdluli</span></div>
+          <p class="footer-copy">© 2026 Gugulethu Mdluli · Front-End Developer · Johannesburg, SA</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/GMDLULI" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gugulethu-mdluli-242655244" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/gugulethu.mdluli/#" target="_blank" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://twitter.com/MdluliM80026" target="_blank" title="X / Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
         </div>
       </div>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+    </script>
   </body>
 </html>

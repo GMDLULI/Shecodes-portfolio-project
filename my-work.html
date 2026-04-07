@@ -3,190 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Shecodes provides free workshops fro women and this page shows some of the work done by a SheCodes student Gugulethu Mdluli"
-    />
-    <title>Work-My Work by Gugulethu Mdluli</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <meta name="description" content="My Work — Projects by Gugulethu Mdluli, Front-End Developer in Johannesburg, South Africa." />
+    <title>My Work — Gugulethu Mdluli</title>
+    <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/ced7c3a3be.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ced7c3a3be.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" title="linkden link"
-          >Gugulethu Mdluli</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/" title="Home"
-              >Home</a
-            >
-            <a class="nav-link" href="/contact.html" title="Contact"
-              >Contact me</a
-            >
-            <a class="nav-link" href="/about.html" title="About">About me</a>
-            <a class="nav-link active" href="/my-work.html" title="my work"
-              >My Work</a
-            >
-          </div>
-        </div>
+
+    <nav>
+      <a class="nav-brand" href="index.html">Gugulethu <span>Mdluli</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a class="active" href="my-work.html">My Work</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:0.55rem 1.4rem;">Hire Me</a>
       </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
-    <h1 class="work-heading">Take a look at what I have been working on</h1>
-    <div class="d-flex justify-content-between p-4 text-center">
-      <p class="work-paragraphs">
-        The following project where done using HTML , Javascript and CSS. They
-        are all dynamic in their own individual way. The frist project which is
-        the cake app is dynamic in a sense that a user can enter data and that
-        data can be distributed on screen.
+
+    <!-- HERO -->
+    <section class="work-hero" style="max-width:1100px; margin:0 auto;">
+      <p class="section-label fade-up delay-1">Portfolio</p>
+      <h1 class="section-title fade-up delay-2" style="font-size: clamp(2.5rem, 5vw, 4.5rem);">Things I've built</h1>
+      <p style="max-width:560px; margin-top:1rem; font-size:1rem;" class="fade-up delay-3">
+        A collection of projects spanning React.js applications, Flutter mobile apps, client websites, and SheCodes workshop work — each representing a step in my journey as a developer.
       </p>
-      <p class="work-paragraphs">
-        The second app is a weather app, this app is able to display a weather
-        forcast of any city in the work. It a user can simply type in the city
-        and the weather will be distributed. The last app is dynamic in a sense
-        that a user can naviagate to multiple pages using the provided links
-      </p>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            src="styles/images/cake1-app.jpg"
-            alt="cake-app"
-            class="work-image mt-5"
-            height="400px"
-          />
-          <a href="/#cake" tilte="cake-app" class="work-link">
-            <h4>Cake Project</h4></a
-          >
-        </div>
-        <div class="col-sm-4">
-          <img
-            src="styles/images/weather-app.jpg"
-            alt="weather-app"
-            class="work-image mt-5"
-            height="400px"
-          />
-          <a href="/#weather" title="weather-app" class="work-link">
-            <h4>Weather Project</h4></a
-          >
-        </div>
-        <div class="col-sm-4">
-          <img
-            src="styles/images/croissant.jpg"
-            alt="croissant-app"
-            class="work-image mt-5"
-            height="400px"
-          />
-          <a href="/#croissant" title="croissant" class="work-link">
-            <h4>croissant project</h4></a
-          >
-        </div>
-      </div>
-      <footer>
-        <div
-          class="contact-box justify-content-between mb-5 mt-5 d-none d-md-flex"
-        >
-          <div>
-            <h4>Work Enquiry</h4>
-            <p class="text">Lets work together</p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn btn-primary mt-3"
-              title="contact me"
-              >Contact me</a
-            >
-          </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
-          <a
-            href="mailto:gugulethundluli98@gmail.com"
-            title="email"
-            target="_blank"
-            ><h3>gugulethumdluli98@gmail.com</h3></a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://www.instagram.com/gugulethu.mdluli/#"
-            class="mt-5 socials"
-            title="instagram"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/gugulethu.mdluli.106"
-            class="mt-5 socials"
-            title="facebook"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a
-            href="https://twitter.com/MdluliM80026"
-            class="socials mt-5"
-            title="twitter"
-            target="_blank"
-            ><i class="fa-brands fa-square-x-twitter"></i>
-          </a>
-          <a
-            href="https://github.com/GMDLULI"
-            class="socials mt-5"
-            title="Github"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </footer>
+    </section>
+
+    <!-- INTRO BLURB -->
+    <div class="work-intro-grid">
+      <p>The following projects were built across my internship at MTN Software Solutions, the WeThinkCode_ programme, personal client work, and SheCodes workshops. They range from full mobile apps with Firebase backends to pixel-perfect responsive websites for real clients.</p>
+      <p>Each project sharpened different skills — component architecture, REST API integration, multi-page navigation, design system thinking, and mobile MVVM patterns. Click "Launch" on any live project to see it in action.</p>
     </div>
 
-    <i class="fa-brands fa-instagram"></i>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <!-- PROJECTS GRID -->
+    <section style="padding: 4rem 5% 6rem;">
+      <div class="container">
+
+        <!-- Category: Professional & Client Work -->
+        <p class="section-label" style="margin-bottom:2rem;">Professional &amp; Client Work</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">⚛️</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">React.js · TypeScript · Storybook</p>
+              <h3 class="project-title">MTN Component Library</h3>
+              <p>Reusable, accessible React.js UI components and an interactive Storybook library built during my internship at MTN Software Solutions. Enabled stakeholders to validate components in isolation against design specs.</p>
+              <div class="project-footer">
+                <span style="font-size:0.75rem; color:var(--text-faint);">Internal — NDA</span>
+                <div class="stack-row" style="margin-top:0">
+                  <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Storybook</span><span class="tag">Vitest</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🍔</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">HTML · CSS · JavaScript · Client Work</p>
+              <h3 class="project-title">Food Truck Website</h3>
+              <p>Fully responsive website designed and developed for a real food truck business client. Handled layout, content structure, and all interactive elements from scratch.</p>
+              <div class="project-footer">
+                <a href="https://food-truck-website.netlify.app/" target="_blank" class="project-link">Launch <span class="project-link-arrow">→</span></a>
+                <div class="stack-row" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🏗️</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">HTML · CSS · JavaScript · Client Work</p>
+              <h3 class="project-title">Construction Services Website</h3>
+              <p>Responsive multi-section website for a construction services company — designed and built end-to-end, including mobile-first layout and interactive elements.</p>
+              <div class="project-footer">
+                <a href="https://mandlazicandr.netlify.app/" target="_blank" class="project-link">Launch <span class="project-link-arrow">→</span></a>
+                <div class="stack-row" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🏋️</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Flutter · Firebase · MVVM · WeThinkCode_</p>
+              <h3 class="project-title">Fitness Tracker App</h3>
+              <p>Cross-platform mobile fitness app with secure Firebase Authentication and Firestore data persistence. Implemented MVVM architecture for clean state management and separation of concerns.</p>
+              <div class="project-footer">
+                <div class="stack-row" style="margin-top:0"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Dart</span><span class="tag">MVVM</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">💼</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">React · TypeScript · StyledComponent</p>
+              <h3 class="project-title">Job Hub</h3>
+              <p>Multi Page web application for a jub hub. where clients are able to look for jobs or services around the area. This project is aimed at helping local business to get their services out there at a reasonable price.</p>
+              <div class="project-footer">
+                <div class="stack-row" style="margin-top:0">
+                  <a href="https://mandlazicandr.netlify.app/" target="_blank" class="project-link">Launch <span class="project-link-arrow">→</span></a>
+                  <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Styled Components</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Category: SheCodes Workshop -->
+        <p class="section-label" style="margin-top:5rem; margin-bottom:2rem;">SheCodes Workshop Projects</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🌤️</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">React.js · REST API · SheCodes</p>
+              <h3 class="project-title">Weather App</h3>
+              <p>Weather forecast app built with React.js and a real-time API. Search any city in the world to see a 7-day forecast, min/max temperatures, weather icons, and condition descriptions.</p>
+              <div class="project-footer">
+                <a href="https://glowing-dieffenbachia-9a0c6b.netlify.app/" target="_blank" class="project-link">Launch <span class="project-link-arrow">→</span></a>
+                <div class="stack-row" style="margin-top:0"><span class="tag">React</span><span class="tag">API</span><span class="tag">CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🍰</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">HTML · CSS · JavaScript · SheCodes</p>
+              <h3 class="project-title">Cake App</h3>
+              <p>Dynamic single-page app where users enter data that renders on screen — featuring a chocolate cake recipe and an order flow demonstrating DOM manipulation and user interaction patterns.</p>
+              <div class="project-footer">
+                <div class="stack-row" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-emoji-bg">🥐</div>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">HTML · CSS · Multi-page · SheCodes</p>
+              <h3 class="project-title">Croissant Project</h3>
+              <p>Multi-page HTML/CSS website dedicated to the croissant pastry — demonstrating page structure, navigation between pages, and content layout fundamentals.</p>
+              <div class="project-footer">
+                <a href="https://chic-daifuku-d56230.netlify.app/" target="_blank" class="project-link">Launch <span class="project-link-arrow">→</span></a>
+                <div class="stack-row" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- INQUIRY BANNER -->
+    <section style="padding: 5rem 5%;">
+      <div class="inquiry-banner">
+        <div>
+          <h3>Want to work together?</h3>
+          <p>Open to full-time roles, freelance projects, and collaborations.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Gugulethu <span>Mdluli</span></div>
+          <p class="footer-copy">© 2026 Gugulethu Mdluli · Front-End Developer · Johannesburg, SA</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/GMDLULI" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gugulethu-mdluli-242655244" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/gugulethu.mdluli/#" target="_blank" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://twitter.com/MdluliM80026" target="_blank" title="X / Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+    </script>
   </body>
 </html>
