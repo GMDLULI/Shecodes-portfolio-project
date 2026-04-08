@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Hub — Preview · Gugulethu Mdluli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <style>
+      /* ── Page layout ── */
+      .preview-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg, #0d0d0d);
+        color: var(--text, #f0ece4);
+      }
+
+      /* ── Hero banner ── */
+      .preview-hero {
+        padding: 5rem 5% 3rem;
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      .preview-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent, #c9a96e);
+        text-decoration: none;
+        margin-bottom: 2.5rem;
+        opacity: 0.8;
+        transition: opacity 0.2s;
+      }
+      .preview-back:hover { opacity: 1; }
+
+      .preview-tag {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent, #c9a96e);
+        margin-bottom: 0.8rem;
+      }
+
+      .preview-title {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 0 0 1rem;
+      }
+
+      .preview-desc {
+        font-size: 1rem;
+        line-height: 1.7;
+        opacity: 0.7;
+        max-width: 620px;
+        margin: 0 auto 2rem;
+      }
+
+      .preview-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+      }
+
+      /* reuse .tag from portfolio.css; fallback if not loaded */
+      .tag {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid rgba(201,169,110,0.35);
+        color: var(--accent, #c9a96e);
+        background: rgba(201,169,110,0.06);
+        letter-spacing: 0.06em;
+      }
+
+      /* ── Video wrapper ── */
+      .video-wrap {
+        max-width: 900px;
+        margin: 0 auto 5rem;
+        width: 90%;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 24px 80px rgba(0,0,0,0.55);
+        border: 1px solid rgba(255,255,255,0.07);
+        background: #000;
+        position: relative;
+      }
+
+      .video-wrap video {
+        width: 100%;
+        display: block;
+        border-radius: 16px;
+      }
+
+      /* status badge */
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255,190,60,0.4);
+        background: rgba(255,190,60,0.08);
+        color: #f5c842;
+        margin-bottom: 2.5rem;
+      }
+      .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #f5c842;
+        animation: pulse 1.8s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.4; transform: scale(0.7); }
+      }
+
+      /* ── Footer note ── */
+      .preview-footer-note {
+        text-align: center;
+        padding: 2rem 5%;
+        font-size: 0.82rem;
+        opacity: 0.45;
+        font-family: 'DM Mono', monospace;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        margin-top: auto;
+      }
+      .preview-footer-note a {
+        color: var(--accent, #c9a96e);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="preview-page">
+
+    <!-- NAV -->
+    <nav>
+      <a class="nav-brand" href="index.html">Gugulethu <span>Mdluli</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="my-work.html" class="active">My Work</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:0.55rem 1.4rem;">Hire Me</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <div class="preview-hero">
+      <a href="index.html#projects" class="preview-back">← Back to projects</a>
+
+      <p class="preview-tag">Project Preview</p>
+      <h1 class="preview-title">Job <em>Hub</em></h1>
+      <p class="preview-desc">
+        Multi-page web application connecting job seekers with local services and businesses.
+        Helping local enterprises get their services out there at a reasonable price.
+      </p>
+
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        In Progress
+      </div>
+
+      <div class="preview-tags">
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Styled Components</span>
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-wrap">
+      <!--
+        Place your video file inside an `assets/` folder next to this HTML file.
+        Rename it to `job-hub-demo.mp4` or update the src below to match your filename.
+        Supported formats: mp4, webm, mov
+      -->
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/job-hub-poster.png"
+      >
+        <source src="assets/recording-compressed.mp4" type="video/mp4" />
+        <!-- <source src="assets/job-hub-demo.webm" type="video/webm" /> -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- FOOTER NOTE -->
+    <p class="preview-footer-note">
+      © 2025 <a href="index.html">Gugulethu Mdluli</a> · Front-End Developer · Johannesburg, SA
+    </p>
+
+    <script>
+      const toggle = document.getElementById('navToggle');
+      const links  = document.getElementById('navLinks');
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+    </script>
+  </body>
+</html>
